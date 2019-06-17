@@ -1,0 +1,600 @@
+@charset "UTF-8";
+body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, form, fieldset, legend, button, input, textarea, th, td {
+  margin: 0;
+  padding: 0;
+}
+
+body, button, input, select, textarea {
+  font-family: "微软雅黑";
+  font: 12px/1.5tahoma, arial, /5b8b/4f53;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+}
+
+address, cite, dfn, em, var {
+  font-style: normal;
+}
+
+textarea {
+  overflow: auto;
+}
+
+code, kbd, pre, samp {
+  font-family: couriernew, courier, monospace;
+  font-size: 12px;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+sub {
+  vertical-align: text-bottom;
+}
+
+legend {
+  color: #000;
+}
+
+fieldset, img {
+  border: 0;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+pre, form, fieldset, table, th, td {
+  border: none;
+  font-family: "微软雅黑";
+  font-size: 14px;
+  margin: 0px;
+  padding: 0px;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+  font-style: normal;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link {
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+a:hover {
+  color: #fff;
+}
+
+a:active {
+  color: #fff;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+input::-ms-reveal {
+  display: none;
+}
+
+input {
+  -webkit-appearance: none;
+  margin: 0;
+  outline: none;
+  padding: 0;
+}
+
+input::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+input::-ms-input-placeholder {
+  color: #ccc;
+}
+
+input::-moz-placeholder {
+  color: #ccc;
+}
+
+input[type=submit], input[type=button] {
+  cursor: pointer;
+}
+
+button[disabled], input[disabled] {
+  cursor: default;
+}
+
+img {
+  border: none;
+}
+
+ul, ol, li {
+  list-style-type: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+/*公共方法*/
+.clear {
+  clear: both;
+}
+
+.clearleft {
+  clear: left;
+}
+
+.clearright {
+  clear: right;
+}
+
+.floatleft {
+  float: left;
+}
+
+.floatright {
+  float: right;
+}
+
+.cursor {
+  cursor: pointer;
+}
+
+/* flex容器 */
+.flex-box {
+  display: flex;
+}
+
+/* flex项目 */
+/* 图标 */
+i.icon {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* container容器最大width: ; */
+.min-w {
+  width: 1240px;
+  margin: 0 auto;
+}
+
+/* 产品描述、 */
+.description {
+  font-size: 14px;
+  text-align: center;
+}
+
+.l-description {
+  text-align: center;
+  font-size: 16px;
+}
+
+.s-description {
+  font-size: 12px;
+  text-align: center;
+}
+
+.xl-description {
+  text-align: center;
+  font-size: 18px;
+}
+
+/* aTag作button */
+a.btn-re {
+  display: inline-block;
+}
+
+a.btn-rd {
+  display: inline-block;
+  border-radius: 400px;
+}
+
+.img-block {
+  display: block;
+}
+
+@font-face {
+  font-family: "iconfont";
+  src: url("../iconfont/iconfont.eot");
+  src: url("../iconfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../iconfont/iconfont.woff2") format("woff2"), url("../iconfont/iconfont.woff") format("woff"), url("../iconfont/iconfont.ttf") format("truetype"), url("../iconfont/iconfont.svg#iconfont") format("svg");
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    max-width: 1920px;
+    margin: 0 auto;
+  }
+}
+/*滚动条里面小方块*/
+/*滚动条里面轨道*/
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  background: #EDEDED;
+}
+
+::-webkit-scrollbar-track-piece {
+  background-color: #eee;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: #535353;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #000;
+}
+
+.index-header {
+  position: absolute;
+  width: 100%;
+  height: 60px;
+  padding-top: 10px;
+  z-index: 10;
+  max-width: 1920px;
+}
+.index-header .container {
+  color: #fff;
+  line-height: 60px;
+}
+.index-header .container .logo {
+  float: left;
+  position: relative;
+}
+.index-header .container .logo .logo-link {
+  font-size: 24px;
+}
+.index-header .container .logo .logo-link:hover {
+  color: #ccc;
+}
+.index-header .container .nav {
+  float: right;
+}
+.index-header .container .nav .flex-item {
+  padding: 0 20px;
+  border-radius: 4px;
+}
+.index-header .container .nav .flex-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.index-header .container .iconfont {
+  margin-left: 10px;
+  font-size: 24px;
+  vertical-align: top;
+}
+
+main .main-wrap {
+  min-width: 1240px;
+}
+main .main-wrap h3.title {
+  font-size: 26px;
+  color: #333;
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
+main .main-wrap img.img-block {
+  display: block;
+  margin: 0 auto;
+}
+main .main-wrap .anmiate-box {
+  overflow: hidden;
+}
+main .main-wrap .anmiate-box .anmiate-wrap {
+  overflow: hidden;
+  -webkit-transition: all 0.6s;
+  -moz-transition: all 0.6s;
+  -ms-transition: all 0.6s;
+  -o-transition: all 0.6s;
+  transition: all 0.6s;
+  -webkit-transform: translate(0, 140%);
+  -moz-transform: translate(0, 140%);
+  -ms-transform: translate(0, 140%);
+  -o-transform: translate(0, 140%);
+  transform: translate(0, 140%);
+}
+main .main-wrap .anmiate-box .anmiate-wrap.anmiated {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  transform: translate(0);
+}
+main .main-one {
+  background: url("../img/planets-1068198.jpg") no-repeat center;
+  background-size: cover;
+  height: 100vh;
+  min-height: 800px;
+}
+main .main-one .container {
+  height: 100vh;
+  min-height: 800px;
+}
+main .main-one .container .anmiate-title {
+  padding-top: 400px;
+  position: relative;
+  animation: left 0.8s forwards 0s;
+}
+@keyframes left {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@-webkit-keyframes left {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@-moz-keyframes left {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@-ms-keyframes left {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+  }
+}
+@-o-keyframes left {
+  0% {
+    -webkit-transform: translate(-100%, 0);
+    -moz-transform: translate(-100%, 0);
+    -ms-transform: translate(-100%, 0);
+    -o-transform: translate(-100%, 0);
+    transform: translate(-100%, 0);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    -moz-transform: translate(0);
+    -ms-transform: translate(0);
+    -o-transform: translate(0);
+    transform: translate(0);
+  }
+}
+main .main-one .container h2.title {
+  color: #ffffff;
+  font-size: 36px;
+  padding-top: 50px;
+}
+main .main-one .container p.description {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: left;
+}
+main .main-two {
+  background: url("../img/why_bg@1x.jpg") no-repeat center;
+  background-size: cover;
+}
+main .main-two .container {
+  padding: 130px 0;
+}
+main .main-two .container .why {
+  color: #fff;
+  text-align: center;
+  justify-content: space-around;
+}
+main .main-two .container .why .flex-item {
+  padding: 50px 16px 20px 16px;
+  width: 16%;
+  background: rgba(255, 255, 255, 0.2);
+}
+main .main-two .container .why .flex-item:hover {
+  -webkit-transition: transform 0.25s;
+  -moz-transition: transform 0.25s;
+  -ms-transition: transform 0.25s;
+  -o-transition: transform 0.25s;
+  transition: transform 0.25s;
+  -webkit-transform: translateY(-10px);
+  -moz-transform: translateY(-10px);
+  -ms-transform: translateY(-10px);
+  -o-transform: translateY(-10px);
+  transform: translateY(-10px);
+  background: rgba(255, 141, 107, 0.2);
+}
+main .main-two .container .why .flex-item .icon-box {
+  padding: 40px 0;
+}
+main .main-two .container .why .flex-item .icon-box .iconfont {
+  font-size: 40px;
+}
+main .main-two .container .why .flex-item .title {
+  padding-top: 10px;
+}
+main .main-two .container .why .flex-item .description {
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+main .main-two .container .why .flex-item:nth-child(3) .iconfont {
+  display: inline-block;
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -o-transform: scale(1.2);
+  transform: scale(1.2);
+}
+main .main-three {
+  background: -webkit-linear-gradient(#2c2d36 0%, #14171f 100%);
+  background: -o-linear-gradient(#2c2d36 0%, #14171f 100%);
+  background: linear-gradient(#2c2d36 0%, #14171f 100%);
+  height: 800px;
+}
+main .main-three .container {
+  background: -webkit-linear-gradient(#2c2d36 0%, #14171f 100%);
+  background: -o-linear-gradient(#2c2d36 0%, #14171f 100%);
+  background: linear-gradient(#2c2d36 0%, #14171f 100%);
+  height: 800px;
+}
+main .main-three .container .title {
+  color: #fff;
+}
+main .main-three .container .xl-description {
+  color: #fff;
+  opacity: 0.8;
+  padding-bottom: 40px;
+}
+main .main-four {
+  background: -webkit-radial-gradient(#2e2f33 0%, #1a1b1f 100%);
+  background: -moz-radial-gradient(#2e2f33 0%, #1a1b1f 100%);
+  background: -ms-radial-gradient(#2e2f33 0%, #1a1b1f 100%);
+  background: -o-radial-gradient(#2e2f33 0%, #1a1b1f 100%);
+  background: radial-gradient(#2e2f33 0%, #1a1b1f 100%);
+  height: auto;
+  min-width: 1240px;
+}
+main .main-four .container {
+  height: auto;
+  color: #Fff;
+  padding-bottom: 100px;
+}
+main .main-four .container .title {
+  color: #fff;
+}
+main .main-four .container .xl-description {
+  color: #fff;
+  opacity: 0.8;
+}
+main .main-four .container .scenes {
+  padding-top: 100px;
+}
+main .main-four .container .scenes .scenes-item {
+  width: 620px;
+}
+main .main-four .container .scenes .scenes-item .img-block {
+  border-radius: 8px;
+  width: 620px;
+}
+main .main-four .container .scenes .scenes-item .xl-description {
+  padding-left: 50px;
+  text-align: left;
+  display: inline-block;
+}
+main .main-four .container .scenes .scenes-item .xl-description .ad {
+  display: block;
+  padding-top: 30px;
+  color: #fff;
+  opacity: 1;
+}
+main .main-four .container .scenes .scenes-item .xl-description .ad span {
+  color: #ff8238;
+}
+main .main-four .container .scenes .scenes-item:first-child {
+  -webkit-transform: translate(-100%, 0);
+  -moz-transform: translate(-100%, 0);
+  -ms-transform: translate(-100%, 0);
+  -o-transform: translate(-100%, 0);
+  transform: translate(-100%, 0);
+}
+main .main-four .container .scenes .scenes-item:first-child.anmiated {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  transform: translate(0);
+}
+main .main-four .container .scenes .scenes-item:last-child {
+  -webkit-transform: translate(100%, 0);
+  -moz-transform: translate(100%, 0);
+  -ms-transform: translate(100%, 0);
+  -o-transform: translate(100%, 0);
+  transform: translate(100%, 0);
+}
+main .main-four .container .scenes .scenes-item:last-child.anmiated {
+  -webkit-transform: translate(0);
+  -moz-transform: translate(0);
+  -ms-transform: translate(0);
+  -o-transform: translate(0);
+  transform: translate(0);
+}
+main .main-four .container .scenes:nth-of-type(2n) .scenes-item:first-child .xl-description {
+  padding-left: 0;
+  padding-right: 50px;
+}
+
+/*# sourceMappingURL=index.css.map */
