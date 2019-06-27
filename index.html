@@ -3,54 +3,72 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
 	<title>秒开</title>
 	<link rel="stylesheet" href="./css/index.css">
 	<script src="./js/jquery-1.7.2.js"></script>
+	<script>
+        // 设置html的字体大小(页面使用rem布局)
+    	var winWidth = window.innerWidth;
+        if(winWidth <= 770) {
+        	document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth/10+'px';
+        }
+        window.addEventListener('resize',function(){
+        	winWidth = window.innerWidth;
+        	if(winWidth <= 770) {
+        		document.getElementsByTagName('html')[0].style.fontSize=window.innerWidth/10+'px';
+        	}else{
+        		document.getElementsByTagName('html')[0].style.fontSize='inherit'
+        	}
+        });
+    </script>
 </head>
 <body>
 	<header class="index-header">
-		<div class="container min-w">
-			<div class="logo">
-				<a href="http://www.miaokai.info" class="logo-link">秒开</a>
+		<div class="fixed-wrap">
+			<div class="container min-w clear">
+				<div class="logo">
+					<a href="http://www.miaokai.info" class="logo-link">秒开</a>
+				</div>
+				<ul class="flex-box nav">
+					<li class="flex-item">
+						<a href="http://www.miaokai.info">
+							首页
+							<span class="iconfont">&#xe72a;</span>
+						</a>
+					</li>
+					<li class="flex-item">
+						<a href="http://www.miaokai.info/auth/register">
+							注册
+							<span class="iconfont">&#xe734;</span>
+						</a>
+					</li>
+					<li class="flex-item">
+						<a href="http://www.miaokai.info/auth/login">
+							登录
+							<span class="iconfont icon-renlianshibie">&#xe63e;</span>
+						</a>
+					</li>
+					<li class="flex-item">
+						<a href="http://www.miaokai.info/register">
+							下载
+							<span class="iconfont">&#xe6be;</span>
+						</a>
+					</li>
+				</ul>
 			</div>
-			<ul class="flex-box nav">
-				<li class="flex-item">
-					<a href="http://www.miaokai.info">
-						首页
-						<span class="iconfont">&#xe72a;</span>
-					</a>
-				</li>
-				<li class="flex-item">
-					<a href="http://www.miaokai.info/auth/register">
-						注册
-						<span class="iconfont">&#xe734;</span>
-					</a>
-				</li>
-				<li class="flex-item">
-					<a href="http://www.miaokai.info/auth/login">
-						登录
-						<span class="iconfont icon-renlianshibie">&#xe63e;</span>
-					</a>
-				</li>
-				<li class="flex-item">
-					<a href="http://www.miaokai.info/register">
-						下载
-						<span class="iconfont">&#xe6be;</span>
-					</a>
-				</li>
-			</ul>
 		</div>
 	</header>
 	<main>
 		<div class="main-wrap main-one">
 			<div class="container min-w">
 				<div class="anmiate-box anmiate-title">
-					<h2 class="title">越过</h2>
-					<p class="description">发现更大更丰富的“世界”</p>
-					<h2 class="title">拘束</h2>
-					<p class="description">不翼而飞，拥抱无限制的“通讯”</p>
-					<h2 class="title">感受</h2>
-					<p class="description">屏幕之内字里行间的“快感”</p>
+					<h2 class="title ant1">越过</h2>
+					<p class="description ant1">发现更大更丰富的“世界”</p>
+					<h2 class="title ant2">拘束</h2>
+					<p class="description ant2">不翼而飞，拥抱无限制的“通讯”</p>
+					<h2 class="title ant3">感受</h2>
+					<p class="description ant3">屏幕之内字里行间的“快感”</p>
 				</div>
 			</div>
 		</div>
@@ -95,28 +113,6 @@
 							知无不言，言无不尽！来聊--到天黑^.^……呵护小姐姐，帮助小哥哥。爱你们酱~ meme哒
 						</p>
 					</li>
-					<!-- <li class="flex-item anmiate-box">
-						<h4 class="title">愉悦社交</h4>
-						<p class="icon-box"><span class="iconfont">&#xeae4;</span></p>
-						<p class="description anmiate-wrap">
-							私密网络全程加密，轻松访问Google Play、WhatsApp、LINE、Skype、脸书和推特、Gmail、Instagram、Reddit
-						</p>
-					</li> -->
-					<!-- <li class="flex-item anmiate-box">
-						<h4 class="title">文学研究</h4>
-						<p class="icon-box"><span class="iconfont">&#xe675;</span></p>
-						<p class="description anmiate-wrap">
-							可在Google学术、ScienceDirect、BASE Search等网站上快速搜索学术论文资料。在手机上使用．
-						</p>
-					</li> -->
-					<!-- <li class="flex-item anmiate-box">
-						<h4 class="title">贸易购物</h4>
-						<p class="icon-box"><span class="iconfont">&#xe67f;</span></p>
-						<p class="description anmiate-wrap">
-							适用于对外贸易，海淘等业务，<br>自由地沟通合作、在线协作和无障碍交易.
-						</p>
-					</li> -->
-					
 				</ul>
 			</div>
 		</div>
@@ -152,8 +148,8 @@
 						</p>
 					</li>
 				</ul>
-				<ul class="flex-box scenes anmiate-box">
-					<li class="flex-item scenes-item anmiate-wrap">
+				<ul class="flex-box scenes txt-top anmiate-box">
+					<li class="flex-item scenes-item txt-item anmiate-wrap">
 						<p class="xl-description">
 							跨国办公就是这么简单，顺畅得身临其境般；跨国文件在也不用担心传输问题了；与海外客户自由地沟通合作、在线协作和无障碍交易；黑五总有打动你的价格，心里面想买的小久久终于不在种草了；
 							<span class="ad">
@@ -161,7 +157,7 @@
 							</span>
 						</p>
 					</li>
-					<li class="flex-item scenes-item anmiate-wrap">
+					<li class="flex-item scenes-item img-item anmiate-wrap">
 						<img src="./img/workplace-1245776_640.jpg" alt="" class="img-block">
 					</li>
 				</ul>
@@ -187,7 +183,6 @@
 	$(document).ready(function(){
 		var anmiateList = $('.anmiate-box .anmiate-wrap');
 		var windowH = $(window).height()
-		console.log(anmiateList)
 		$(document).scroll(function(){
 			var scrollTop = $(document).scrollTop();
 			for(var i = 0; i < anmiateList.length; i++){
@@ -200,5 +195,19 @@
 		})
 		
 	})
+	// 悬浮条
+	$(document).ready(function(){
+        var fixedDom = $('.index-header');
+        var thisoffsetTop=$(fixedDom).offset().top;
+        // 悬浮条
+        $(window).scroll(function(){
+            var scrollTop=$(window).scrollTop();
+            if(scrollTop >=0 && scrollTop>thisoffsetTop ){
+                $(fixedDom).addClass("fixed");
+            }else{
+                $(fixedDom).removeClass("fixed");
+            }
+        });
+    })
 </script>
 </html>

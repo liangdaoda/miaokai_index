@@ -130,6 +130,11 @@ a:hover {
 .clear{
 	clear: both;
 }
+.clear:after{
+	content:'';
+	clear:both;
+	display:block;
+}
 .clearleft{
 	clear: left;
 }
@@ -160,7 +165,7 @@ i.icon{
 }
 /* container容器最大width: ; */
 .min-w{
-	width: 1240px;
+	max-width: 1240px;
 	margin: 0 auto;
 }
 /* 产品描述、 */
@@ -218,6 +223,7 @@ a.btn-rd{
 }
 
 $imgUrl:'../img/';
+$r:75;
 // 浏览器前缀
 @mixin prefixer($property, $value){
 	-webkit-#{$property}: #{$value};
@@ -267,6 +273,7 @@ $imgUrl:'../img/';
 }
 ::-webkit-scrollbar {//滚动条的宽度
 	width:6px;
+	height:6px;
 }
 ::-webkit-scrollbar-thumb {//滚动条的设置
 	border-radius: 10px;
@@ -280,9 +287,19 @@ $imgUrl:'../img/';
 	position:absolute;
 	width:100%;
 	height:60px;
-	padding-top:10px;
 	z-index:10;
 	max-width: 1920px;
+	&.fixed{
+		.fixed-wrap{
+			height:60px;
+			width:100%;
+			background:rgba(0,0,0,.7);
+			z-index:99;
+			max-width: 1920px;
+			position: fixed;
+			top:0;
+		}
+	}
 	.container{
 		color:#fff;
 		line-height: 60px;
@@ -315,17 +332,17 @@ $imgUrl:'../img/';
 }
 main{
 	.main-wrap{
-		min-width:1240px;
 		h3.title{
 			font-size:26px;
 			color:#333;
 			text-align:center;
-			padding-top:40px;
+			padding-top:60px;
 			padding-bottom:30px;
 		}
 		img.img-block{
 			display:block;
 			margin:0 auto;
+			max-width:100%;
 		}
 		.anmiate-box{
 			overflow:hidden;
@@ -346,6 +363,8 @@ main{
 		min-height:800px;
 		.container{
 			height:100vh;
+			background:url($imgUrl+'planets-1068198.jpg') no-repeat center;
+			background-size:cover;
 			min-height:800px;
 			.anmiate-title{
 				@include prefixer-keyframes(left){
@@ -443,7 +462,6 @@ main{
 		background:-o-radial-gradient(#2e2f33 0%, #1a1b1f 100%);
 		background:radial-gradient(#2e2f33 0%, #1a1b1f 100%);
 		height:auto;
-		min-width:1240px;
 		.container{
 			height:auto;
 			color:#Fff;
@@ -467,6 +485,7 @@ main{
 						padding-left:50px;
 						text-align:left;
 						display:inline-block;
+						padding-top:148px;
 						.ad{
 							display:block;
 							padding-top:30px;
@@ -495,6 +514,142 @@ main{
 						.xl-description{
 							padding-left:0;
 							padding-right:50px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media (max-width:1240px){
+	main .main-one .container .anmiate-title{
+		padding-left:60px;
+	}
+}
+@media  (max-width:770px){
+	.index-header{
+		height:100rem/$r;
+		.fixed-wrap{
+			.container{
+				line-height:100rem/$r;
+				.logo{
+					line-height:80rem/$r;
+					margin-left:10rem/$r;
+					.logo-link{
+						font-size: 32rem/$r;
+					}
+				}
+				.nav{
+					margin-right:10rem/$r;
+					.flex-item{
+						padding: 0;
+						line-height: 80rem/$r;
+						margin:0 10rem/$r;
+						a{
+							font-size:28rem/$r;
+							.iconfont{
+								vertical-align:bottom;
+								margin-left:8rem/$r;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	main{
+		.main-wrap h3.title{
+			font-size:40rem/$r;
+			padding-top:60rem/$r;
+			padding-bottom:28rem/$r;
+		}
+		.xl-description{
+			font-size:26rem/$r;
+		}
+		.main-one{
+			min-height:800rem/$r;
+			height:800rem/$r;
+			.container{
+				.anmiate-title{
+					padding-top:230rem/$r;
+					padding-left:0rem/$r;
+					text-align:center;
+					.title{
+						font-size:40rem/$r;
+						padding-top:20rem/$r;
+					}
+					.description{
+						text-align:center;
+						font-size:28rem/$r;
+						padding-left:20rem/$r;
+					}
+				}
+			}
+		}
+		.main-two{
+
+			.container{
+				padding:80rem/$r 0;
+				.why{
+					display:block;
+					.flex-item{
+						width:650rem/$r;
+						padding:20rem/$r 20rem/$r 10rem/$r;
+						margin:0 auto;
+						margin-bottom:40rem/$r;
+						.title{
+							font-size:30rem/$r;
+						}
+						.icon-box{
+							padding:20rem/$r 0;
+						}
+						&:hover{
+							-webkit-transform: translate(0);
+							   -moz-transform: translate(0);
+							    -ms-transform: translate(0);
+							     -o-transform: translate(0);
+							        transform: translate(0);
+						}
+					}
+				}
+			}
+		}
+		.main-three{
+			&,.container{
+				height:800rem/$r;
+			}
+		}
+		.main-four{
+			.container{
+				.scenes{
+					display:block;
+					padding-top:80rem/$r;
+					.flex-item{
+						display:block;
+						width: 650rem/$r;
+						margin:0 auto;
+						.img-block{
+							width:650rem/$r;
+						}
+						.xl-description{
+							padding-top:40rem/$r;
+							padding-left:0;
+							.ad{
+								padding-top:10rem/$r;
+							}
+						}
+					}
+					&.txt-top{
+						position: relative;
+						.txt-item{
+							padding-top:400rem/$r;
+						}
+						.img-item{
+							position:absolute;
+							left:0;
+							right:0;
+							margin:0 auto;
+							top:40rem/$r;
 						}
 					}
 				}
