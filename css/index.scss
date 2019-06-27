@@ -363,8 +363,6 @@ main{
 		min-height:800px;
 		.container{
 			height:100vh;
-			background:url($imgUrl+'planets-1068198.jpg') no-repeat center;
-			background-size:cover;
 			min-height:800px;
 			.anmiate-title{
 				@include prefixer-keyframes(left){

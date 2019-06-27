@@ -364,8 +364,6 @@ main .main-one {
 }
 main .main-one .container {
   height: 100vh;
-  background: url("../img/planets-1068198.jpg") no-repeat center;
-  background-size: cover;
   min-height: 800px;
 }
 main .main-one .container .anmiate-title {
