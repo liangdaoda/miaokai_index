@@ -5,8 +5,8 @@ body, h1, h2, h3, h4, h5, h6, hr, p, blockquote, dl, dt, dd, ul, ol, li, pre, fo
 }
 
 body, button, input, select, textarea {
-  font-family: "微软雅黑";
-  font: 12px/1.5tahoma, arial, /5b8b/4f53;
+  font: 14px/1.5 arial, "Microsoft Yahei", "Hiragino Sans GB", sans-serif;
+  color: #6a6a6a;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -608,6 +608,108 @@ main .main-four .container .scenes .scenes-item:last-child.anmiated {
 main .main-four .container .scenes:nth-of-type(2n) .scenes-item:first-child .xl-description {
   padding-left: 0;
   padding-right: 50px;
+}
+
+.miaokai-aside {
+  position: absolute;
+  height: 100%;
+  max-width: 200px;
+  left: 0;
+  top: 0;
+  background: #2e2d2e;
+}
+.miaokai-aside a {
+  color: #bababa;
+}
+.miaokai-aside .aside-nav .aside-nav-item {
+  position: relative;
+}
+.miaokai-aside .aside-nav .aside-nav-item .iconfont {
+  font-size: 22px;
+  margin-right: 8px;
+  vertical-align: middle;
+}
+.miaokai-aside .aside-nav .aside-nav-item a {
+  display: inline-block;
+  padding: 15px 40px;
+}
+.miaokai-aside .aside-nav .aside-nav-item a:hover {
+  color: #ff3369;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  font-size: 14px;
+  background: #fff;
+  border-radius: 0 6px 6px 0;
+  color: #555;
+  border: 1px solid transparent;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips .tips-wrap {
+  max-height: 0;
+  padding: 10px 10px 14px 20px;
+  opacity: 0;
+  min-width: 160px;
+  overflow: hidden;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips .nav-tips-title {
+  padding-bottom: 8px;
+  font-weight: 600;
+  color: #222;
+  font-size: 14px;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips .tips-link {
+  text-decoration: underline;
+  padding: 0;
+  color: #222;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips .tips-link:hover {
+  color: #ff3369;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips .nav-tips-desc {
+  font-size: 12px;
+  color: #4c4141;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips .nav-tips-desc .red {
+  color: #ff3369;
+}
+.miaokai-aside .aside-nav .aside-nav-item .nav-item-tips:before {
+  content: "";
+  width: 0;
+  display: inline-block;
+  height: 0;
+  border-width: 10px;
+  border-style: solid;
+  border-color: transparent #fff transparent transparent;
+  position: absolute;
+  top: 16px;
+  left: 0px;
+  -webkit-transition: all 0.25s;
+  -moz-transition: all 0.25s;
+  -ms-transition: all 0.25s;
+  -o-transition: all 0.25s;
+  transition: all 0.25s;
+}
+.miaokai-aside .aside-nav .aside-nav-item:hover {
+  background: #222;
+}
+.miaokai-aside .aside-nav .aside-nav-item:hover .nav-item-tips {
+  z-index: 66;
+  border: 1px solid #d8d8d8;
+  box-shadow: 0px 2px 14px -4px rgba(0, 0, 0, 0.3), 0px 0px 1px 0px rgba(0, 0, 0, 0.1);
+}
+.miaokai-aside .aside-nav .aside-nav-item:hover .nav-item-tips .tips-wrap {
+  opacity: 1;
+  max-height: 500px;
+}
+.miaokai-aside .aside-nav .aside-nav-item:hover .nav-item-tips:before {
+  left: -20px;
 }
 
 @media (max-width: 1240px) {
